@@ -94,8 +94,7 @@
   <body
     class="bg-[#0f0f0f] m-0 p-[10px] font-[Poppins] text-[color:var(--text)] [background:radial-gradient(1200px_800px_at_80%_-10%,rgba(155,107,255,0.18),transparent_60%),radial-gradient(900px_700px_at_-10%_10%,rgba(110,231,245,0.12),transparent_50%),#0f0f0f]"
   >
-    <section
-      id="Header"
+    <section id="Header"
       class="flex justify-between items-center items-center lg:p-[5px] p-[15px] border border-b-1 border-0 border-[#0b0b0f99] relative top-0 sticky z-[1000]"
     >
       <div class="">
@@ -112,21 +111,27 @@
       </div>
       <div class="lg:flex justify-between items-center p-2 hidden">
         <ul class="hidden md:flex text-[#a8adbd] text-[17px] items-center">
-          <li
-            class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+          <a href="#Projects">
+            <li
+              class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+            >
+              Projects
+            </li></a
           >
-            Projects
-          </li>
-          <li
-            class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+          <a href="#Techstack">
+            <li
+              class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+            >
+              Tech stacks
+            </li></a
           >
-            Tech stacks
-          </li>
-          <li
-            class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+          <a href="#About"
+            ><li
+              class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+            >
+              About
+            </li></a
           >
-            About
-          </li>
           <li
             class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
           >
@@ -152,22 +157,34 @@
           onclick="cancelToggle()"
           class="fa-solid fa-xmark text-3xl cancel cursor-pointer self-end mb-6"
         ></i>
-        <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Projects</p>
-        <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Tech stacks</p>
-        <p class="font-bold cursor-pointer hover:text-[#26ffc2]">About</p>
-        <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Contact</p>
-        <div class="w-full"><a
-          href="https://docs.google.com/document/d/1iI_ot793tHXy-B4mP26hq2ssYKHHRhvnqNZY9ZIBiIM/edit?tab=t.0"
+        <a href="#Projects"
+          ><p class="font-bold cursor-pointer hover:text-[#26ffc2]">
+            Projects
+          </p></a
         >
-          <button
-            class="bg-[#26ffc2] w-full cursor-pointer text-black text-[1.05rem] px-[15px] py-[6px] rounded-[20px]"
+        <a href="#Techstack"
+          ><p class="font-bold cursor-pointer hover:text-[#26ffc2]">
+            Tech stacks
+          </p></a
+        >
+        <a href="#About">
+          <p class="font-bold cursor-pointer hover:text-[#26ffc2]">About</p></a
+        >
+        <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Contact</p>
+        <div class="w-full">
+          <a
+            href="https://docs.google.com/document/d/1iI_ot793tHXy-B4mP26hq2ssYKHHRhvnqNZY9ZIBiIM/edit?tab=t.0"
           >
-            Resume
-          </button></a
-        ></div>
-        
+            <button
+              class="bg-[#26ffc2] w-full cursor-pointer text-black text-[1.05rem] px-[15px] py-[6px] rounded-[20px]"
+            >
+              Resume
+            </button></a
+          >
+        </div>
       </div>
     </section>
+
     <section class="body lg:mt-[40px]">
       <div class="lg:flex block justfiy-between">
         <div
@@ -187,12 +204,12 @@
           </p>
           <div class="flex justify-start p-[20px] w-[100%]">
             <button
-              class="lg:w-[30%] w-[50%] rounded-[18px] bg-[#26ffc2] lg:p-[13px] p-[9.5px]"
+              class="lg:w-[30%] text-[black] w-[50%] rounded-[18px] bg-[#26ffc2] lg:p-[13px] p-[9.5px]"
             >
               Get in Touch
             </button>
             <button
-              class="lg:w-[30%] w-[50%] rounded-[18px] bg-[#26ffc2] lg:p-[13px] p-[9.5px] ml-[5px] lg:ml-[15px]"
+              class="lg:w-[30%] w-[50%] text-[black] rounded-[18px] bg-[#26ffc2] lg:p-[13px] p-[9.5px] ml-[5px] lg:ml-[15px]"
             >
               Browse projects
             </button>
@@ -211,7 +228,7 @@
       </div>
     </section>
 
-    <section class="AboutMe lg:mt-[100px]" data-aos="zoom-in">
+    <section class="AboutMe lg:mt-[100px]" data-aos="zoom-in" id="About">
       <div class="flex justify-center items-center">
         <div
           class="flex flex-col p-[5px] justify-center w-[100%] lg:w-[90%] items-center"
@@ -251,7 +268,11 @@
         </div>
       </div>
     </section>
-    <section class="stacks border border-[#fff9] p-6" data-aos="fade-up">
+
+    <section id="Techstack" class="stacks border border-[#fff9] h-[350px] mt-[30px] flex items-center justify-center p-6"
+      data-aos="fade-up"
+      
+    >
       <div class="flex flex-col items-center">
         <p
           class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px] transform scale-x-110"
@@ -311,20 +332,30 @@
       </div>
     </section>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-[10px]">
-      <a href="https://1inch.vercel.app/">
+    <section id="Projects" class="mt-[50px]">
+      <div class="flex justify-center items-center">
+        <p
+          class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px] "
+        >
+          MY PROJECTS
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:p-[10px] p-[5px]">
         <div
-          class="rounded-[15px] p-[20px] cursor-pointer"
+          class="rounded-[15px] lg:p-[20px] p-[0px] cursor-pointer"
           data-aos="fade-right"
         >
           <div><img src="screenshotlg.png" /></div>
           <div class="bg-[black] p-[10px] rounded-b-[15px]">
             <h2 class="text-[19px] mb-2 text-[#cfd3de]">inch clone</h2>
-            <h2 class="text-[14px] mb-2 text-[#cfd3de]">
-              An simple uniswap clone built with React, tailwindcss, and
-              Coingecko Api.
+            <h2 class="text-[12px] mb-2 text-[#cfd3de]">
+              I designed a simple interface inspired by the 1inch decentralized
+              exchange and integrated the CoinGecko API to fetch and display
+              live cryptocurrency pair names along with their logos. The project
+              demonstrates my ability to combine clean UI design with external
+              data integration.
             </h2>
-            <div class="flex justify-start">
+            <div class="flex justify-start mt-[15px]">
               <button
                 class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
               >
@@ -349,21 +380,22 @@
               </h2></a
             >
           </div>
-        </div></a
-      >
-      <a href="https://devmontannasuniswap-clone.vercel.app/">
+        </div>
+
         <div
-          class="rounded-[15px] p-[20px] cursor-pointer"
+          class="rounded-[15px] lg:p-[20px] p-[0px] cursor-pointer"
           data-aos="fade-left"
         >
           <div><img src="uniswap.png" /></div>
           <div class="bg-[black] p-[10px] rounded-b-[15px]">
-            <h2 class="text-[19px] mb-2 text-[#cfd3de]">inch clone</h2>
-            <h2 class="text-[14px] mb-2 text-[#cfd3de]">
-              An simple uniswap clone built with React, tailwindcss, and
-              Coingecko Api.
+            <h2 class="text-[19px] mb-2 text-[#cfd3de]">Uniswap clone</h2>
+            <h2 class="text-[12px] mb-2 text-[#cfd3de]">
+              I designed a clean and modern interface inspired by the Uniswap
+              decentralized exchange. The focus was on replicating the core look
+              and feel of the platform, showcasing my ability to build a smooth
+              layout from scratch
             </h2>
-            <div class="flex justify-start">
+            <div class="flex justify-start mt-[15px]">
               <button
                 class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
               >
@@ -373,11 +405,6 @@
                 class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
               >
                 Tailwind
-              </button>
-              <button
-                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-              >
-                Coingecko Api
               </button>
             </div>
             <a href="https://devmontannasuniswap-clone.vercel.app/">
@@ -388,32 +415,32 @@
               </h2></a
             >
           </div>
-        </div></a
-      >
-      <a href="https://olantijewelryhouse.vercel.app/">
-        <div class="rounded-[15px] p-[20px] cursor-pointer" data-aos="zoom-in">
+        </div>
+
+        <div
+          class="rounded-[15px] lg:p-[20px] p-[0px] cursor-pointer"
+          data-aos="zoom-in"
+        >
           <div><img src="olanti.png" /></div>
           <div class="bg-[black] rounded-b-[15px] p-[10px]">
-            <h2 class="text-[19px] mb-2 text-[#cfd3de]">inch clone</h2>
-            <h2 class="text-[14px] mb-2 text-[#cfd3de]">
-              An simple uniswap clone built with React, tailwindcss, and
-              Coingecko Api.
+            <h2 class="text-[19px] mb-2 text-[#cfd3de]">OlaNti jewelry</h2>
+            <h2 class="text-[12px] mb-2 text-[#cfd3de]">
+              A simple landing page website. I designed and implemented a clean
+              product showcase for earrings and jewelry, focusing on layout,
+              styling, and user-friendly UI components to highlight items
+              elegantly. This project demonstrates my front-end design skills
+              and my ability to build modern websites
             </h2>
             <div class="flex justify-start">
               <button
                 class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
               >
-                React
+                HTML
               </button>
               <button
                 class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
               >
-                Tailwind
-              </button>
-              <button
-                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-              >
-                Coingecko Api
+                CSS
               </button>
             </div>
             <a href="https://olantijewelryhouse.vercel.app/">
@@ -424,13 +451,14 @@
               </h2></a
             >
           </div>
-        </div></a
-      >
-      <div class="p-6 rounded-xl" data-aos="fade-left">
-        <h2 class="text-2xl font-bold mb-2">🎨 Beautiful</h2>
-        <p>Pixel-perfect UI with smooth animations.</p>
+        </div>
+
+        <div class="p-6 rounded-xl" data-aos="fade-left">
+          <h2 class="text-2xl font-bold mb-2">🎨 Beautiful</h2>
+          <p>Pixel-perfect UI with smooth animations.</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <script>
       function openMenu() {
