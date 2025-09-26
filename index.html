@@ -55,7 +55,7 @@
       href="https://onwuzuruikegoodluckportfoilo.netlify.app/favicon.ico"
       type="image/x-icon"
     />
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       :root {
         --bg: #0f0f0f;
@@ -92,7 +92,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body
-    class="bg-[#0f0f0f] m-0 p-0 font-[Poppins] text-[color:var(--text)] [background:radial-gradient(1200px_800px_at_80%_-10%,rgba(155,107,255,0.18),transparent_60%),radial-gradient(900px_700px_at_-10%_10%,rgba(110,231,245,0.12),transparent_50%),#0f0f0f]"
+    class="bg-[#0f0f0f] m-0 p-[10px] font-[Poppins] text-[color:var(--text)] [background:radial-gradient(1200px_800px_at_80%_-10%,rgba(155,107,255,0.18),transparent_60%),radial-gradient(900px_700px_at_-10%_10%,rgba(110,231,245,0.12),transparent_50%),#0f0f0f]"
   >
     <section
       id="Header"
@@ -132,11 +132,15 @@
           >
             Contact
           </li>
-          <button
-            class="ml-[15px] bg-[#26ffc2] cursor-pointer text-black text-[1.05rem] px-[15px] py-[6px] rounded-[20px]"
+          <a
+            href="https://docs.google.com/document/d/1iI_ot793tHXy-B4mP26hq2ssYKHHRhvnqNZY9ZIBiIM/edit?tab=t.0"
           >
-            Resume
-          </button>
+            <button
+              class="ml-[15px] bg-[#26ffc2] cursor-pointer text-black text-[1.05rem] px-[15px] py-[6px] rounded-[20px]"
+            >
+              Resume
+            </button></a
+          >
         </ul>
       </div>
 
@@ -152,15 +156,19 @@
         <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Tech stacks</p>
         <p class="font-bold cursor-pointer hover:text-[#26ffc2]">About</p>
         <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Contact</p>
-        <button
-          class="bg-[#26ffc2] cursor-pointer text-black text-[1.05rem] px-[15px] py-[6px] rounded-[20px]"
+        <a
+          href="https://docs.google.com/document/d/1iI_ot793tHXy-B4mP26hq2ssYKHHRhvnqNZY9ZIBiIM/edit?tab=t.0"
         >
-          Resume
-        </button>
+          <button
+            class="bg-[#26ffc2] cursor-pointer text-black text-[1.05rem] px-[15px] py-[6px] rounded-[20px]"
+          >
+            Resume
+          </button></a
+        >
       </div>
     </section>
     <section class="body lg:mt-[40px]">
-      <div class="lg:flex block justfiy-space-between">
+      <div class="lg:flex block justfiy-between">
         <div
           class="h-[420px] lg:w-[50%] w-[100%] flex lg:pl-[80px] lg:p-[20px] p-[20px] flex-col justify-center"
         >
@@ -195,20 +203,14 @@
           <img
             loading="lazy"
             src="Newimg.png"
-            class="w-full h-full object-cover hover:scale-110 transition duration-700 ease-in-out"
+            class="w-full h-full object-cover hover:scale-90 transition duration-700 ease-in-out"
             id="yokoImg"
           />
         </div>
       </div>
-
-      <!-- <p
-        class="font-montserrat text-transparent bg-clip-text bg-gradient-to-r from-[var(--text)] to-[var(--accent-3)] text-[clamp(2rem,6vw,3.6rem)] leading-[1.05] my-[0.35em]"
-      >
-        Gradient text in Tailwind
-      </p> -->
     </section>
 
-    <section class="AboutMe lg:mt-[100px]"  data-aos="zoom-in">
+    <section class="AboutMe lg:mt-[100px]" data-aos="zoom-in">
       <div class="flex justify-center items-center">
         <div
           class="flex flex-col p-[5px] justify-center w-[100%] lg:w-[90%] items-center"
@@ -248,67 +250,186 @@
         </div>
       </div>
     </section>
- <section class="stacks border border-[#fff9] p-6"  data-aos="fade-up">
-  <div class="flex flex-col items-center">
-    <p
-      class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px]  transform scale-x-110"
-    >
-      Tech Stack
-    </p>
+    <section class="stacks border border-[#fff9] p-6" data-aos="fade-up">
+      <div class="flex flex-col items-center">
+        <p
+          class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px] transform scale-x-110"
+        >
+          Tech Stack
+        </p>
 
-    
-    <div
-      class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:flex justify-center gap-4 mt-[50px]"
-    >
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] text-center  to-[var(--panel-2)] border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-      >
-        CSS3
+        <div
+          class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:flex justify-center gap-4 mt-[50px]"
+        >
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] cursor-pointer text-center to-[var(--panel-2)] border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            CSS3
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] cursor-pointer lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            JavaScript
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] cursor-pointer to-[var(--panel-2)] text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            Python
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] cursor-pointer to-[var(--panel-2)] text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            React
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] cursor-pointer to-[var(--panel-2)] text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            Tailwind
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] cursor-pointer text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            Boostrap
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center cursor-pointer border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            Github
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] text-[15px] text-center cursor-pointer to-[var(--panel-2)] border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            Rest API
+          </div>
+          <div
+            class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] cursor-pointer text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+          >
+            Framer
+          </div>
+        </div>
       </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed]  py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+    </section>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-[10px]">
+      <a href="https://1inch.vercel.app/">
+        <div
+          class="rounded-[15px] p-[20px] cursor-pointer"
+          data-aos="fade-right"
+        >
+          <div><img src="screenshotlg.png" /></div>
+          <div class="bg-[black] p-[10px] rounded-b-[15px]">
+            <h2 class="text-[19px] mb-2 text-[#cfd3de]">inch clone</h2>
+            <h2 class="text-[14px] mb-2 text-[#cfd3de]">
+              An simple uniswap clone built with React, tailwindcss, and
+              Coingecko Api.
+            </h2>
+            <div class="flex justify-start">
+              <button
+                class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                React
+              </button>
+              <button
+                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                Tailwind
+              </button>
+              <button
+                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                Coingecko Api
+              </button>
+            </div>
+            <a href="https://1inch.vercel.app/">
+              <h2
+                class="text-[17px] font-[Poppins] text-[color:var(--text)] mt-[20px] mb-[10px] underline text-[#26ffc2]"
+              >
+                Live demo
+              </h2></a
+            >
+          </div>
+        </div></a
       >
-        JavaScript
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center  border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+      <a href="https://devmontannasuniswap-clone.vercel.app/">
+        <div
+          class="rounded-[15px] p-[20px] cursor-pointer"
+          data-aos="fade-left"
+        >
+          <div><img src="uniswap.png" /></div>
+          <div class="bg-[black] p-[10px] rounded-b-[15px]">
+            <h2 class="text-[19px] mb-2 text-[#cfd3de]">inch clone</h2>
+            <h2 class="text-[14px] mb-2 text-[#cfd3de]">
+              An simple uniswap clone built with React, tailwindcss, and
+              Coingecko Api.
+            </h2>
+            <div class="flex justify-start">
+              <button
+                class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                React
+              </button>
+              <button
+                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                Tailwind
+              </button>
+              <button
+                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                Coingecko Api
+              </button>
+            </div>
+            <a href="https://devmontannasuniswap-clone.vercel.app/">
+              <h2
+                class="text-[17px] font-[Poppins] text-[color:var(--text)] mt-[20px] mb-[10px] underline text-[#26ffc2]"
+              >
+                Live demo
+              </h2></a
+            >
+          </div>
+        </div></a
       >
-        Python
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center  border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+      <a href="https://olantijewelryhouse.vercel.app/">
+        <div class="rounded-[15px] p-[20px] cursor-pointer" data-aos="zoom-in">
+          <div><img src="olanti.png" /></div>
+          <div class="bg-[black] rounded-b-[15px] p-[10px]">
+            <h2 class="text-[19px] mb-2 text-[#cfd3de]">inch clone</h2>
+            <h2 class="text-[14px] mb-2 text-[#cfd3de]">
+              An simple uniswap clone built with React, tailwindcss, and
+              Coingecko Api.
+            </h2>
+            <div class="flex justify-start">
+              <button
+                class="bg-gradient-to-b from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                React
+              </button>
+              <button
+                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                Tailwind
+              </button>
+              <button
+                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] lg:px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              >
+                Coingecko Api
+              </button>
+            </div>
+            <a href="https://olantijewelryhouse.vercel.app/">
+              <h2
+                class="text-[17px] font-[Poppins] text-[color:var(--text)] mt-[20px] mb-[10px] underline text-[#26ffc2]"
+              >
+                Live demo
+              </h2></a
+            >
+          </div>
+        </div></a
       >
-        React
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center  border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-      >
-        Tailwind 
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center  border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-      >
-        Boostrap 
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-      >
-        Github
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] text-[15px] text-center to-[var(--panel-2)] border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-      >
-       Rest API
-      </div>
-      <div
-        class="bg-gradient-to-b from-[var(--panel)] to-[var(--panel-2)] text-center border border-white/10 text-[#e8eaed] px-[1.05rem] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-      >
-        Framer 
+      <div class="p-6 rounded-xl" data-aos="fade-left">
+        <h2 class="text-2xl font-bold mb-2">🎨 Beautiful</h2>
+        <p>Pixel-perfect UI with smooth animations.</p>
       </div>
     </div>
-  </div>
-</section>
-
 
     <script>
       function openMenu() {
@@ -319,7 +440,7 @@
       }
     </script>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module">
       import {
         animate,
@@ -341,12 +462,11 @@
       yoko.addEventListener("mouseleave", () => {
         animate(yoko, { scale: 0.9 }, { duration: 0.4, easing: "ease-in-out" });
       });
-       
     </script>
-   <script>
+    <script>
       AOS.init({
-        duration: 1000, 
-        once: true,    
+        duration: 1000,
+        once: true,
       });
     </script>
   </body>
