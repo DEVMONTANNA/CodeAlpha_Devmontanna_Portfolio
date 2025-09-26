@@ -55,6 +55,7 @@
       href="https://onwuzuruikegoodluckportfoilo.netlify.app/favicon.ico"
       type="image/x-icon"
     />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       :root {
         --bg: #0f0f0f;
@@ -207,7 +208,7 @@
       </p> -->
     </section>
 
-    <section class="AboutMe lg:mt-[100px]">
+    <section class="AboutMe lg:mt-[100px]"  data-aos="zoom-in">
       <div class="flex justify-center items-center">
         <div
           class="flex flex-col p-[5px] justify-center w-[100%] lg:w-[90%] items-center"
@@ -247,7 +248,7 @@
         </div>
       </div>
     </section>
- <section class="stacks border border-[#fff9] p-6">
+ <section class="stacks border border-[#fff9] p-6"  data-aos="fade-up">
   <div class="flex flex-col items-center">
     <p
       class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px]  transform scale-x-110"
@@ -318,6 +319,7 @@
       }
     </script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module">
       import {
         animate,
@@ -338,6 +340,13 @@
 
       yoko.addEventListener("mouseleave", () => {
         animate(yoko, { scale: 0.9 }, { duration: 0.4, easing: "ease-in-out" });
+      });
+       
+    </script>
+   <script>
+      AOS.init({
+        duration: 1000, 
+        once: true,    
       });
     </script>
   </body>
