@@ -133,11 +133,13 @@
               About
             </li></a
           >
-          <li
-            class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+          <a href="#Contactme"
+            ><li
+              class="ml-[15px] font-bold cursor-pointer text-[1.05rem] border-b-0 hover:border-b-2 hover:border-[#26ffc2]"
+            >
+              Contact
+            </li></a
           >
-            Contact
-          </li>
           <a
             href="https://docs.google.com/document/d/1iI_ot793tHXy-B4mP26hq2ssYKHHRhvnqNZY9ZIBiIM/edit?tab=t.0"
           >
@@ -171,7 +173,11 @@
         <a href="#About">
           <p class="font-bold cursor-pointer hover:text-[#26ffc2]">About</p></a
         >
-        <p class="font-bold cursor-pointer hover:text-[#26ffc2]">Contact</p>
+        <a href="#Contactme">
+          <p class="font-bold cursor-pointer hover:text-[#26ffc2]">
+            Contact
+          </p></a
+        >
         <div class="w-full">
           <a
             href="https://docs.google.com/document/d/1iI_ot793tHXy-B4mP26hq2ssYKHHRhvnqNZY9ZIBiIM/edit?tab=t.0"
@@ -465,6 +471,104 @@
       </div>
     </section>
 
+    <section id="Contactme">
+      <div class="flex flex-col justify-center items-center p-[15px]">
+        <h1
+          class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px]"
+        >
+          CONTACT ME
+        </h1>
+        <p class="font-[Poppins] text-[color:var(--text)] text-[15px]">
+          Let’s work on your idea. I’m open to freelance or full-time roles.
+        </p>
+      </div>
+      <form
+        onsubmit="handleSubmit(event)"
+        class="w-[100%] flex flex-col items-center justify-center p-[10px]"
+      >
+        <div
+          class="w-[100%] userInput1 flex justify-center items-center items-center"
+        >
+          <input
+            value=""
+            required
+            class="lg:w-[40%] w-[100%] p-[10px] border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+            placeholder="Your Name"
+          />
+        </div>
+        <div
+          class="w-[100%] userInput2 flex justify-center mt-[20px] items-center items-center"
+        >
+          <input
+            required
+            value=""
+            class="lg:w-[40%] w-[100%] p-[10px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+            placeholder="Your Email"
+          />
+        </div>
+        <div class="w-[100%] flex justify-center items-center mt-[20px]">
+          <textarea
+            class="lg:w-[40%] w-[100%] p-[10px] h-[150px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+            placeholder="Your Message"
+          ></textarea>
+        </div>
+        <div class="w-[100%] submit flex justify-center items-center mt-[20px]">
+          <button
+            type="submit"
+            class="rounded-[25px] cursor-pointer bg-[#26ffc2] text-[black] font-[Poppins] font-bold lg:w-[15%] w-[50%] p-[15px] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-200"
+          >
+            Submit
+          </button>
+        </div>
+        <p class="testss"></p>
+      </form>
+    </section>
+    <hr class="mt-[60px] border-t border-gray-500/50" />
+    <section
+      id="Copyright License"
+      class="flex flex-col mt-[40px] items-center justify-center p-[20px]"
+    >
+      <div>
+        <p class="text-[16px]">© 2025 Goodluck • All rights reserved.</p>
+      </div>
+
+      <div class="flex space-x-4 mt-4">
+        <a
+          href="https://github.com/DEVMONTANNA"
+          class="text-gray-400 hover:text-white transition-colors"
+        >
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/onwuzuruike-goodluck-chiedozie-983350373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          class="text-gray-400 hover:text-blue-400 transition-colors"
+        >
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+
+        <a
+          href="https://wa.me/2348146992794"
+          class="text-gray-400 hover:text-green-500 transition-colors"
+        >
+          <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+
+        <a
+          href="https://x.com/montanna_016?s=21"
+          class="text-gray-400 hover:text-black transition-colors"
+        >
+          <i class="fab fa-x-twitter text-2xl"></i>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@devmontanna?_t=ZS-90F3QjovRWZ&_r=1"
+          class="text-gray-400 hover:text-pink-500 transition-colors"
+        >
+          <i class="fab fa-tiktok text-2xl"></i>
+        </a>
+      </div>
+    </section>
     <div class="bg-floating">
       <div class="circle"></div>
       <div class="circle"></div>
@@ -472,7 +576,26 @@
       <div class="circle"></div>
       <div class="circle"></div>
     </div>
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
 
+        const response = "Form is submitted";
+
+        if (response === "Form is submitted") {
+          const text = document.querySelector(".testss");
+          if (text) {
+            text.textContent = "Congratulations upon successful submission!";
+            text.style.color = "#26ffc2";
+            text.style.fontWeight = "bold";
+            text.style.marginTop = "20px";
+            text.style.textAlign = "center";
+          } else {
+            console.error("Element with class 'testss' not found");
+          }
+        }
+      }
+    </script>
     <script>
       function openMenu() {
         document.getElementById("mobileMenu").style.display = "flex";
