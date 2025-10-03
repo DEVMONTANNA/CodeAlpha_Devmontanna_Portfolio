@@ -215,7 +215,6 @@
             <button
               class="lg:w-[30%] lg:text-[] text-[14px] text-[black] w-[50%] rounded-[18px] bg-[#26ffc2] lg:p-[13px] p-[7pxpx]"
             >
-              
               <a href="#Contactme">Get in Touch</a>
             </button>
             <button
@@ -347,128 +346,215 @@
       </div>
     </section>
 
-    <section id="Projects" class="overflow-x-hidden mt-[50px] p-[10px]">
-      <div class="flex justify-center items-center">
-        <p
-          class="font-[Poppins] text-[color:var(--text)] font-bold text-[30px]"
-        >
-          MY PROJECTS
-        </p>
+    <section id="Projects" class="mt-[80px] p-[20px]">
+      <div class="flex justify-center items-center mb-[60px]">
+        <div class="text-center">
+          <p
+            class="font-[Poppins] text-[#26ffc2] font-bold text-[36px] mb-[10px]"
+          >
+            MY PROJECTS
+          </p>
+          <div
+            class="w-[80px] h-[3px] bg-gradient-to-r from-transparent via-[#26ffc2] to-transparent mx-auto"
+          ></div>
+          <p class="text-[#cfd3de] text-[16px] mt-[15px] max-w-[500px] mx-auto">
+            Here are some of my recent projects that showcase my skills in
+            frontend development and design
+          </p>
+        </div>
       </div>
+
       <div
-        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:p-[10px] p-[5px]"
+        class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 lg:p-[20px] p-[10px] max-w-[1400px] mx-auto"
       >
         <div
-          class="rounded-[15px] lg:p-[20px] p-[0px] cursor-pointer"
+          class="group rounded-[20px] overflow-hidden cursor-pointer transform transition-all duration-500 ease-out hover:-translate-y-4"
           data-aos="fade-right"
         >
-          <div class="rounded-[15px]">
-            <img src="screenshotlg.png" class="rounded-t-[15px]" />
+          <div class="relative overflow-hidden rounded-t-[20px]">
+            <img
+              src="screenshotlg.png"
+              class="rounded-t-[20px] w-full h-[220px] object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="1inch Clone Project"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div
+              class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200"
+            >
+              <span
+                class="bg-[#26ffc2] text-black text-[12px] font-bold px-3 py-1 rounded-full"
+                >Live Project</span
+              >
+            </div>
           </div>
-          <div class="bg-[black] p-[10px] rounded-b-[15px]">
-            <h2 class="text-[19px] mb-2 text-[#cfd3de]">1inch clone</h2>
-            <h2 class="text-[12px] mb-2 text-[#cfd3de]">
+
+          <div
+            class="bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] p-[25px] rounded-b-[20px] border border-gray-800 group-hover:border-gray-600 transition-all duration-300"
+          >
+            <h2
+              class="text-[22px] font-bold text-white mb-[12px] group-hover:text-[#26ffc2] transition-colors duration-300"
+            >
+              1inch Clone
+            </h2>
+            <p class="text-[14px] text-[#cfd3de] leading-relaxed mb-[20px]">
               I designed a simple interface inspired by the 1inch decentralized
               exchange and integrated the CoinGecko API to fetch and display
-              live cryptocurrency pair names along with their logos. The project
-              demonstrates my ability to combine clean UI design with external
-              data integration.
-            </h2>
-            <div class="flex justify-start mt-[15px]">
-              <button
-                class="bg-gradient-to-b from-[var(--panel)] px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              live cryptocurrency pair names along with their logos.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-[25px]">
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
               >
                 React
-              </button>
-              <button
-                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              </span>
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
               >
                 Tailwind
-              </button>
-              <button
-                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] px-[1.05rem] text-center lg:text-[15px] text-[12px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              </span>
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
               >
-                Coingecko Api
-              </button>
+                CoinGecko API
+              </span>
             </div>
-            <a href="https://1inch.vercel.app/">
-              <h2
-                class="text-[17px] font-[Poppins] text-[color:var(--text)] mt-[20px] mb-[10px] underline text-[#26ffc2]"
-              >
-                Live demo
-              </h2></a
+
+            <a
+              href="https://1inch.vercel.app/"
+              class="inline-flex items-center gap-2 text-[#26ffc2] font-semibold text-[16px] hover:text-white transition-colors duration-300 group/link"
             >
+              <span>View Live Demo</span>
+              <i
+                class="fas fa-arrow-right text-[12px] transform group-hover/link:translate-x-1 transition-transform duration-300"
+              ></i>
+            </a>
           </div>
         </div>
 
         <div
-          class="rounded-[15px] lg:p-[20px] p-[0px] cursor-pointer"
+          class="group rounded-[20px] overflow-hidden cursor-pointer transform transition-all duration-500 ease-out hover:-translate-y-4"
+          data-aos="fade-up"
+        >
+          <div class="relative overflow-hidden rounded-t-[20px]">
+            <img
+              src="uniswap.png"
+              class="rounded-t-[20px] w-full h-[220px] object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Uniswap Clone Project"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div
+              class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200"
+            >
+              <span
+                class="bg-[#26ffc2] text-black text-[12px] font-bold px-3 py-1 rounded-full"
+                >Live Project</span
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] p-[25px] rounded-b-[20px] border border-gray-800 group-hover:border-gray-600 transition-all duration-300"
+          >
+            <h2
+              class="text-[22px] font-bold text-white mb-[12px] group-hover:text-[#26ffc2] transition-colors duration-300"
+            >
+              Uniswap Clone
+            </h2>
+            <p class="text-[14px] text-[#cfd3de] leading-relaxed mb-[20px]">
+              I designed a clean and modern interface inspired by the Uniswap
+              decentralized exchange, focusing on replicating the core look and
+              feel of the platform.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-[25px]">
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
+              >
+                React
+              </span>
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
+              >
+                Tailwind
+              </span>
+            </div>
+
+            <a
+              href="https://devmontannasuniswap-clone.vercel.app/"
+              class="inline-flex items-center gap-2 text-[#26ffc2] font-semibold text-[16px] hover:text-white transition-colors duration-300 group/link"
+            >
+              <span>View Live Demo</span>
+              <i
+                class="fas fa-arrow-right text-[12px] transform group-hover/link:translate-x-1 transition-transform duration-300"
+              ></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="group rounded-[20px] overflow-hidden cursor-pointer transform transition-all duration-500 ease-out hover:-translate-y-4"
           data-aos="fade-left"
         >
-          <div><img src="uniswap.png" class="rounded-t-[15px]" /></div>
-          <div class="bg-[black] p-[10px] rounded-b-[15px]">
-            <h2 class="text-[19px] mb-2 text-[#cfd3de]">Uniswap clone</h2>
-            <h2 class="text-[12px] mb-2 text-[#cfd3de]">
-              I designed a clean and modern interface inspired by the Uniswap
-              decentralized exchange. The focus was on replicating the core look
-              and feel of the platform, showcasing my ability to build a smooth
-              layout from scratch
-            </h2>
-            <div class="flex justify-start mt-[15px]">
-              <button
-                class="bg-gradient-to-b from-[var(--panel)] px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-              >
-                React
-              </button>
-              <button
-                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
-              >
-                Tailwind
-              </button>
-            </div>
-            <a href="https://devmontannasuniswap-clone.vercel.app/">
-              <h2
-                class="text-[17px] font-[Poppins] text-[color:var(--text)] mt-[20px] mb-[10px] underline text-[#26ffc2]"
-              >
-                Live demo
-              </h2></a
+          <div class="relative overflow-hidden rounded-t-[20px]">
+            <img
+              src="olanti.png"
+              class="rounded-t-[20px] w-full h-[220px] object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="OlaNti Jewelry Project"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            ></div>
+            <div
+              class="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-all duration-500 delay-200"
             >
+              <span
+                class="bg-[#26ffc2] text-black text-[12px] font-bold px-3 py-1 rounded-full"
+                >Live Project</span
+              >
+            </div>
           </div>
-        </div>
 
-        <div
-          class="rounded-[15px] lg:p-[20px] p-[0px] cursor-pointer"
-          data-aos="zoom-in"
-        >
-          <div><img src="olanti.png" class="rounded-t-[15px]" /></div>
-          <div class="bg-[black] rounded-b-[15px] p-[10px]">
-            <h2 class="text-[19px] mb-2 text-[#cfd3de]">OlaNti jewelry</h2>
-            <h2 class="text-[12px] mb-2 text-[#cfd3de]">
-              A simple landing page website. I designed and implemented a clean
-              product showcase for earrings and jewelry, focusing on layout,
-              styling, and user-friendly UI components to highlight items
-              elegantly. This project demonstrates my front-end design skills
-              and my ability to build modern websites
+          <div
+            class="bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] p-[25px] rounded-b-[20px] border border-gray-800 group-hover:border-gray-600 transition-all duration-300"
+          >
+            <h2
+              class="text-[22px] font-bold text-white mb-[12px] group-hover:text-[#26ffc2] transition-colors duration-300"
+            >
+              OlaNti Jewelry
             </h2>
-            <div class="flex justify-start">
-              <button
-                class="bg-gradient-to-b from-[var(--panel)] px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+            <p class="text-[14px] text-[#cfd3de] leading-relaxed mb-[20px]">
+              A simple landing page website featuring a clean product showcase
+              for earrings and jewelry, demonstrating modern frontend design
+              skills and user-friendly UI components.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mb-[25px]">
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
               >
                 HTML
-              </button>
-              <button
-                class="bg-gradient-to-b ml-[10px] from-[var(--panel)] px-[1.05rem] text-center text-[15px] to-[var(--panel-2)] border border-white/10 text-[#e8eaed] py-[0.55rem] rounded-full font-semibold shadow-[0_8px_20px_rgba(0,0,0,0.25)] transition-transform transition-shadow duration-200 ease-in-out"
+              </span>
+              <span
+                class="bg-gradient-to-r from-[#26ffc2]/20 to-[#26ffc2]/10 text-[#26ffc2] text-[12px] px-3 py-2 rounded-full font-semibold border border-[#26ffc2]/30"
               >
                 CSS
-              </button>
+              </span>
             </div>
-            <a href="https://olantijewelryhouse.vercel.app/">
-              <h2
-                class="text-[17px] font-[Poppins] text-[color:var(--text)] mt-[20px] mb-[10px] underline text-[#26ffc2]"
-              >
-                Live demo
-              </h2></a
+
+            <a
+              href="https://olantijewelryhouse.vercel.app/"
+              class="inline-flex items-center gap-2 text-[#26ffc2] font-semibold text-[16px] hover:text-white transition-colors duration-300 group/link"
             >
+              <span>View Live Demo</span>
+              <i
+                class="fas fa-arrow-right text-[12px] transform group-hover/link:translate-x-1 transition-transform duration-300"
+              ></i>
+            </a>
           </div>
         </div>
       </div>
